@@ -19,7 +19,7 @@ body {
 }
 
 .page1 {
-   min-height: 80vh;
+    min-height: 80vh;
     width: 100%;
 }
 
@@ -61,7 +61,7 @@ body {
 
 }
 
-.page1 h1{
+.page1 h1 {
     font-size: 8vw;
     font-weight: 500;
     margin-top: 10vw;
@@ -69,26 +69,94 @@ body {
     font-family: PP mori;
 }
 
-.page1 h2{
+.page1 h2 {
     font-size: 8vw;
     font-weight: 500;
-   margin-left: 30vw;
-   font-family: PP mori;
+    margin-left: 30vw;
+    font-family: PP mori;
 }
 
-.page1 video{
+.page1 video {
     width: 60%;
     margin-top: 5vw;
     position: relative;
     left: 50%;
-    transform: translate(-50%,0);
+    transform: translate(-50%, 0);
+}
 
-    
+/* page 2 */
+
+.page2 {
+    min-height: 80vh;
+    width: 100%;
+    padding: 100px 5vw;
+    border-bottom: 2px solid #6c6c6c;
+    position: relative;
+    z-index: 9;
+}
+
+.page2 h1 {
+    font-size: 7vw;
+    font-weight: 500;
+    color: #111;
 
 }
 
+.page2-container {
+    height: 60vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 5vw; */
+}
 
+.page2-left {
+    /* background-color: blue; */
+    width: 40%;
+}
 
+.page2-right {
+    /* background-color: blue; */
+    width: 24%;
+}
 
+.page2-left h2 {
+    font-size: 4vw;
+    font-weight: 300;
+    color: #111;
+    line-height: 4vw;
+}
 
+.page2-right p {
+    font-size: 28px;
+    color: #111;
+}
 
+.page2-right button {
+    width: 100%;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 0;
+    background-color: #EDBFFF;
+    color: #111;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.page2-right button:hover{
+    background-color: black;
+    color: white;
+    transition: all ease .8s;
+    cursor: pointer;
+}
+
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+    z-index: 9;
+}
