@@ -43,15 +43,15 @@ let main=document.querySelector(".main")
 let vedio = document.querySelector(".main video")
 
 main.addEventListener("mousemove",(dets)=>{
-    cursor.style.left = dets.x+"px"
+    cursor.style.left = dets.x +20+"px"
   
-    cursor.style.top = dets.y+"px"
+    cursor.style.top = dets.y +20+"px"
 
 })
 
 vedio.addEventListener("mouseenter",(dets)=>{
-  sound.style.left = dets.x+"px"
-  sound.style.top = dets.y+"px"
+  sound.style.left = dets.x + 20+"px"
+  sound.style.top = dets.y + 20+"px"
 sound.style.visibility='visible'
  
   cursor.style.visibility='hidden'
@@ -130,6 +130,33 @@ let tl3 = gsap.timeline({
 tl3.to(".main", {
   backgroundColor:"black"
 
+})
+
+var boxes=document.querySelectorAll(".box")
+// console.log(boxes)
+
+boxes.forEach((ele)=>{
+ele.addEventListener("mouseenter",()=>{
+  var att = ele.getAttribute("data-image")
+  cursor.style.width="300px"
+  cursor.style.height="250px"
+  cursor.style.backgroundColor="blue"
+  cursor.style.borderRadius="0"
+  cursor.style.backgroundImage=`url(${att})`
+ 
+})
+
+
+ele.addEventListener("mouseleave",()=>{
+ 
+  cursor.style.backgroundColor="transparent"
+  cursor.style.width="20px"
+  cursor.style.height="20px"
+  cursor.style.borderRadius="50%"
+  cursor.style.backgroundImage=`url(${att})`
+
+ 
+})
 })
 
 
