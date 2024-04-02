@@ -35,6 +35,38 @@ function init() {
 
 init()
 
+// cursor
+
+let cursor=document.querySelector(".cursor")
+let sound =document.querySelector(".sound")
+let main=document.querySelector(".main")
+let vedio = document.querySelector(".main video")
+
+main.addEventListener("mousemove",(dets)=>{
+    cursor.style.left = dets.x+"px"
+  
+    cursor.style.top = dets.y+"px"
+
+})
+
+vedio.addEventListener("mouseenter",(dets)=>{
+  sound.style.left = dets.x+"px"
+  sound.style.top = dets.y+"px"
+sound.style.visibility='visible'
+ 
+  cursor.style.visibility='hidden'
+
+})
+
+vedio.addEventListener("mouseleave",(dets)=>{
+
+sound.style.visibility='hidden'
+cursor.style.visibility='visible'
+
+
+})
+
+
 
 let tl = gsap.timeline({
   scrollTrigger: {
@@ -42,7 +74,7 @@ let tl = gsap.timeline({
     scroller: '.main',
     start: "top 27%",
     end: "top 0",
-    markers: true,
+    // markers: true,
     scrub: 2
 
   }
@@ -71,7 +103,7 @@ let tl2 = gsap.timeline({
     scroller: '.main',
     start: "top -116%",
     end: "top -120%",
-    markers: true,
+    // markers: true,
     scrub: 2
 
   }
@@ -82,6 +114,24 @@ tl2.to(".main", {
   backgroundColor:"white"
 
 }, 'a')
+
+let tl3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".page1 h1",
+    scroller: '.main',
+    start: "top -300%",
+    end: "top -300%",
+    // markers: true,
+    scrub: 2
+
+  }
+})
+
+tl3.to(".main", {
+  backgroundColor:"black"
+
+})
+
 
 
 
