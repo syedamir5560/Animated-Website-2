@@ -288,7 +288,7 @@ body {
 
 /* page-5 */
 .page5 {
-    min-height: 100vh;
+    height: 130vh;
     width: 100%;
     position: relative;
     z-index: 9;
@@ -319,8 +319,81 @@ body {
 
 /* footer */
 
-.footer {
-    height: 100vh;
+
+
+.footer{
+    height: 90vh;
     width: 100%;
+    position: relative;
+    z-index: 9;
+   
+    /* padding: 140px 100px; */
     background-color: #EDBFFF;
 }
+
+.footer h1{
+    color:black;
+    font-size: 5rem;
+    font-weight: 600;
+    /* padding-top: 10vh; */
+}
+
+
+
+
+.foottop .circle2{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    padding-top: 10vh;
+}
+
+.foottop{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10vh;
+}
+
+
+.footdown{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40vw;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 12vw;
+}
+
+.circle2 p{
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer2{
+    height:50vh;
+    width: 100%;
+    position: relative;
+   
+    /* padding: 140px 100px; */
+    background-color: #d6c4da;
+}
+
+.footer h4{
+    margin-top: 150px;
+    margin-left: 13vw;
+    font-size: 1.5rem;
+    color: #111;
+    font-weight: 500;
+}
+
+.footdown .part p{
+    color: black;
+    font-size: 12px;
+    
+}
+
